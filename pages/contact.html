@@ -9,5 +9,34 @@
     <header>
         <h1>Contact Page</h1>
     </header>
+    <section>
+        <p>If you have any questions or just want to get in touch, please fill out the form below</p>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="reason">Reason for Contacting:</label>
+                <select id="reason" name="reason">
+                    <option value="general">General Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="support">Support</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
 </body>
 </html>
